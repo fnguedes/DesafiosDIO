@@ -7,7 +7,10 @@ import Apps from '../Apps';
 import Skills from '../Skills';
 import Profile from '../Profile';
 
-import HomeBat from '../bat-pass/HomeBat';
+import HomeBat from '../bat-pass/HomeBatPass';
+
+import HomeBatSignal from '../bat-signal/HomeBatSignal';
+import Form from '../bat-signal/Form';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -21,6 +24,8 @@ export default function Routes() {
     <Stack.Navigator screenOptions={{headerShown:false}} initialRouteName='Home'>
       <Stack.Screen name="Home" component={MyTabs} />
       <Stack.Screen name="Home Bat" component={HomeBat} />
+      <Stack.Screen name="Home Bat Signal" component={HomeBatSignal} />
+      <Stack.Screen name="Form" component={Form} />
     </Stack.Navigator>
   )
 }

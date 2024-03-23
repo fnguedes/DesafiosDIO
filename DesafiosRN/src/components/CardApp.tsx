@@ -3,17 +3,22 @@ import React from 'react'
 import style from '../style/card'
 import { useNavigation } from '@react-navigation/native'
 
+interface app{
+  nome:string,
+  imagem: string,
+  color: string,
+  secondColor: string,
+  titulo: string,
+}
 
-export default function CardApp({data}) {
-
-  const navigation= useNavigation()
-
+export default function CardApp({data:app,navigation}) {
+  
   return (
-    <TouchableOpacity style={[style.view,{backgroundColor:data.color}]} onPress={()=> navigation.navigate(data.nome) }>
-      <Image source={data.imagem} style={style.img}/>
+    <TouchableOpacity style={[style.view,{backgroundColor:app.color}]} onPress={()=> navigation.navigate(app.nome) }>
+      <Image source={app.imagem} style={style.img}/>
 
       <View style={style.containerTitle}>
-        <Text style={[style.title,{color:data.secondColor}]}>{data.titulo}</Text>
+        <Text style={[style.title,{color:app.secondColor}]}>{app.titulo}</Text>
       </View>
     </TouchableOpacity>
   )
