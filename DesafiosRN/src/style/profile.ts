@@ -1,5 +1,7 @@
-import { StyleSheet } from "react-native";
-import { colors } from "../globalStyles";
+import { Dimensions, StyleSheet } from "react-native";
+import { colors,fontSize } from "../globalStyles";
+
+const {width}=Dimensions.get('screen')
 
 export default StyleSheet.create({
   view:{
@@ -8,10 +10,100 @@ export default StyleSheet.create({
     backgroundColor:colors.background,
   },
   titulo:{
-    height:'5%',
-    fontSize:25,
     fontWeight:'700',
     color:colors.titulo,
-    marginTop:15
+    fontSize:fontSize.medium,
+  },
+  containerDadosGeral:{
+    height:300,
+    width:"100%",
+    paddingTop:20,
+    flexDirection:'row',
+    paddingHorizontal:'5%',
+  },
+  containerImg:{
+    width:120,
+    height:'100%',
+  },
+  img:{
+    width:120,
+    height:120,
+    borderRadius:120
+  },
+  containerContacts:{
+    alignItems:'center'
+  },
+  containerContact:{
+    flexDirection:'row',
+    marginTop:10
+  },
+  txtContato:{
+    marginLeft:5,
+    color:colors.texto,
+    fontSize:fontSize.small,
+    textAlignVertical:'center'
+  },
+  subTitle:{
+    marginTop:10,
+    fontWeight:'700',
+    color:colors.titulo,
+    fontSize:fontSize.normal,
+  },
+  containerDados:{
+    flex:1,
+    height:250,
+    marginLeft:10,
+    alignItems:'center',
+    
+  },
+  containerLista:{
+    marginTop:20,
+    borderRadius:20,
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:colors.backgroundBlocos
+  },
+  containerDadosLista:{
+    flexDirection:'row',
+  },
+  personalDatas:{
+    width:'50%',
+    height:'100%',
+    alignItems:'center'
+  },
+  containerDefault:{
+    marginVertical:10,
+    alignItems:'center',
+    flexDirection:'row',
+  },
+  txt:{
+    marginLeft:5,
+    color:colors.texto
+  },
+  containerListaSkills:{
+    paddingHorizontal:'5%',
+    justifyContent:'space-between',
+    flexDirection:'row',
+    flexWrap:'wrap'
+  },
+//Segunda parte da Tela
+  linha:{
+    width,
+    height:2,
+    backgroundColor:colors.divisao
+  },
+  containerExp:{
+    width,
+    marginTop:15,
+    paddingBottom:30,
+    alignItems:'center',
+  },
+  tituloExp:{
+    zIndex:99,
+    position:'absolute',
+    top:310,
+    fontWeight:'700',
+    color:colors.titulo,
+    fontSize:fontSize.medium,
   },
 })
