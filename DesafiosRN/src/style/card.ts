@@ -3,10 +3,17 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   view:{
-    width:150,
-    height:180,
+    width:130,
+    height:130,
     borderRadius:20,
-    marginTop:30
+    marginTop:30,
+    shadowOffset:{
+      width:6,
+      height:6
+    },
+    shadowOpacity:0.6,
+    shadowRadius:4,
+    elevation:10
   },
   img:{
     width:'100%',

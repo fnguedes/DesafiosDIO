@@ -5,7 +5,7 @@ import perfil from '../assets/PerfilAtual.jpeg'
 
 import Experience from './components/Experience'
 import ButtonSkill from './components/ButtonSkill'
-import { experiences } from './experiences'
+import { experiences } from './datas/experiences'
 
 import { MaterialCommunityIcons,FontAwesome,AntDesign,Zocial  } from '@expo/vector-icons';
 

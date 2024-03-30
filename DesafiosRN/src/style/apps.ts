@@ -18,6 +18,7 @@ export default StyleSheet.create({
   },
   containerCard:{
     width,
+    paddingBottom:30,
     flexWrap:'wrap',
     flexDirection:'row',
     justifyContent:'space-between',

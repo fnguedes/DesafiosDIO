@@ -14,7 +14,7 @@ interface app{
 export default function CardApp({data:app,navigation}) {
   
   return (
-    <TouchableOpacity style={[style.view,{backgroundColor:app.color}]} onPress={()=> navigation.navigate(app.nome) }>
+    <TouchableOpacity style={[style.view,{backgroundColor:app.color,shadowColor:app.secondColor}]} onPress={()=> navigation.navigate(app.nome) }>
       <Image source={app.imagem} style={style.img}/>
 
       <View style={style.containerTitle}>
