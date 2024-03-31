@@ -1,5 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
-import { colors } from "../globalStyles";
+import { colors, fontSize } from "../globalStyles";
 
 const {width}= Dimensions.get('screen')
 
@@ -16,12 +16,24 @@ export default StyleSheet.create({
     color:colors.titulo,
     marginTop:15
   },
-  containerCard:{
+  
+  container:{
     width,
-    paddingBottom:30,
-    flexWrap:'wrap',
-    flexDirection:'row',
-    justifyContent:'space-between',
-    paddingHorizontal:"8%",
+    marginVertical:10
+  },
+  containerScroll:{
+    height:260,
+    justifyContent:'center',
+    alignItems:'center',
+  },
+  containerCategoria:{
+    width:'90%',
+    borderBottomWidth:2,
+    borderColor:colors.divisao
+  },
+  categoria:{
+    fontSize:fontSize.medium,
+    fontWeight:'700',
+    color:colors.textoDestaque
   }
 })

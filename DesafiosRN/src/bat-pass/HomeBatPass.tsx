@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import style from './style/home'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import img from '../../assets/bat-logo.png'
+import img from '../../assets/Apps/bat-logo.png'
 import generate from './service/PasswordGenerate';
 import * as Clipboard from 'expo-clipboard';
 

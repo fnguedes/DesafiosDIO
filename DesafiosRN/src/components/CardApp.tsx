@@ -14,12 +14,16 @@ interface app{
 export default function CardApp({data:app,navigation}) {
   
   return (
-    <TouchableOpacity style={[style.view,{backgroundColor:app.color,shadowColor:app.secondColor}]} onPress={()=> navigation.navigate(app.nome) }>
-      <Image source={app.imagem} style={style.img}/>
+    <View style={style.container}>
+      <TouchableOpacity style={[style.view,{backgroundColor:app.color,shadowColor:app.secondColor}]} onPress={()=> navigation.navigate(app.nome) }>
+        <Image source={app.imagem} style={style.img} resizeMode='contain'/>
 
-      <View style={style.containerTitle}>
-        <Text style={[style.title,{color:app.secondColor}]}>{app.titulo}</Text>
-      </View>
-    </TouchableOpacity>
+        
+      </TouchableOpacity>
+     <View style={{}}>
+        <Text style={[style.title,{color:app.secondColor,textShadowColor:app.secondColor}]}>{app.titulo}</Text>
+      </View>   
+     
+    </View>
   )
 }

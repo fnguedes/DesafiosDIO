@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/Raposa.jpg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#020202"
     },
     "assetBundlePatterns": [
       "**/*"

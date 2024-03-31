@@ -2,18 +2,24 @@ import { StyleSheet } from "react-native";
 
 
 export default StyleSheet.create({
+  container:{
+    alignItems:'center',
+    marginHorizontal:20,
+  },
   view:{
-    width:130,
-    height:130,
-    borderRadius:20,
+    width:80,
+    height:80,
+    borderRadius:100,
     marginTop:30,
+    marginBottom:15,
     shadowOffset:{
-      width:6,
-      height:6
+      width:5,
+      height:5
     },
-    shadowOpacity:0.6,
     shadowRadius:4,
-    elevation:10
+    elevation:10,
+    justifyContent:'center',
+    alignItems:"center"
   },
   img:{
     width:'100%',
@@ -23,11 +29,13 @@ export default StyleSheet.create({
     width:"100%",
     height:'20%',
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
 
   },
   title:{
     fontSize:18,
     fontWeight:'600',
+    textShadowOffset:{width:0,height:2},
+    textShadowRadius:5,
   }
 })

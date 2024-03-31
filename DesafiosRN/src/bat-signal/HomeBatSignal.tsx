@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image, ImageBackground } from 'react-nati
 import React, { useState } from 'react'
 import style from './style/home'
 import { useNavigation } from '@react-navigation/native'
-import batSignal from '../../assets/bat-signal.png'
+import batSignal from '../../assets/Apps/bat-signal.png'
 import fundo from '../../assets/cummulunimbus.jpg'
 
 export default function HomeBatSignal() {

@@ -41,21 +41,23 @@ function MyTabs() {
         borderColor:colors.tabBarColor,
         borderWidth:1,
         }
-      }} >
+      }} initialRouteName='Perfil'>
       <Tab.Screen name="Apps" component={Apps} 
         options={{
           tabBarIcon:({focused})=><MaterialCommunityIcons name="apps" size={40} color={focused?colors.botaoAtivo:colors.botaoInativo} />
         }}
       />
-      <Tab.Screen name="Habilidades" component={Skills} 
-        options={{
-          tabBarIcon:({focused})=><Ionicons name="code-slash" size={35} color={focused?colors.botaoAtivo:colors.botaoInativo} />
-        }}
-      />
+      
       <Tab.Screen name="Perfil" component={Profile} 
       options={{
         tabBarIcon:({focused})=><Ionicons name="person-sharp" size={30} color={focused?colors.botaoAtivo:colors.botaoInativo} />
       }}
+      />
+
+      <Tab.Screen name="Habilidades" component={Skills} 
+        options={{
+          tabBarIcon:({focused})=><Ionicons name="code-slash" size={35} color={focused?colors.botaoAtivo:colors.botaoInativo} />
+        }}
       />
     </Tab.Navigator>
   );

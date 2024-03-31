@@ -2,7 +2,7 @@ import { View, ScrollView, Image, ImageBackground, TouchableOpacity, Text } from
 import React, { useState } from 'react'
 import style from './style/form'
 
-import batSignal from '../../assets/bat-signal.png'
+import batSignal from '../../assets/Apps/bat-signal.png'
 import fundo from '../../assets/cidade.jpg'
 
 import Input from './components/Input'
