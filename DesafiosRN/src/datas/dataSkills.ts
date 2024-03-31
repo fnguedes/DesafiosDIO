@@ -27,3 +27,31 @@ export const dataSkills=[
   {nome:'React Native',imagem:RC,tempo:3},
   {nome:'Typescript',imagem:TY,tempo:1},
 ]
+
+export const mainSkills=[
+  {nome:'Javascript',imagem:JS,tempo:3},
+  {nome:'React Native',imagem:RC,tempo:3},
+  {nome:'Typescript',imagem:TY,tempo:1},
+]
+
+export const linguagens=[
+  {nome:'Javascript',imagem:JS,tempo:3},
+  {nome:'C',imagem:C,tempo:1},
+  {nome:'Java',imagem:JV,tempo:1},
+]
+
+export const Javascript=[
+  {nome:'React Native',imagem:RC,tempo:3},
+  {nome:'Typescript',imagem:TY,tempo:1},
+  {nome:'React',imagem:RC,tempo:1},
+  {nome:'Nodejs',imagem:ND,tempo:1},
+]
+
+export const Outros=[
+  {nome:'Git',imagem:Git,tempo:2},
+  {nome:'Github',imagem:Github,tempo:2},
+  {nome:'Postegresql',imagem:PS,tempo:1},
+  {nome:'HTML',imagem:HT,tempo:2},
+  {nome:'CSS',imagem:CS,tempo:2},
+  {nome:'Figma',imagem:FG,tempo:1},
+]

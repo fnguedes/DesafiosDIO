@@ -2,7 +2,8 @@ import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import style from './style/skills'
 import Badge from './components/Badge'
-import { dataSkills } from './datas/dataSkills'
+import { mainSkills, linguagens, Javascript, Outros } from './datas/dataSkills'
+import ListSkills from './components/ListSkills'
 
 export default function Skills() {
 
@@ -15,24 +16,26 @@ export default function Skills() {
 
         <View style={{marginTop:50,alignItems:'center'}}>
         <Text style={style.colocacao}>2º</Text>
-        <Badge skill={dataSkills[7]}/>
+        <Badge skill={mainSkills[1]}/>
         </View>
           
         <View>
         <Text style={style.colocacao}>1º</Text>
-        <Badge skill={dataSkills[11]}/>
+        <Badge skill={mainSkills[0]}/>
         </View>
   
         <View style={{marginTop:65,alignItems:'center'}}>
           <Text style={style.colocacao}>3º</Text>
-          <Badge skill={dataSkills[12]}/>
+          <Badge skill={mainSkills[2]}/>
         </View>
       </View>
-      <View style={{flex:1}}>
-      <ScrollView contentContainerStyle={style.allSkills}>
-        {dataSkills.map((skill,i)=><Badge key={i} skill={skill}/>)}
+      <ScrollView showsVerticalScrollIndicator={false}>
+
+        <ListSkills data={linguagens} titulo="Linguagens"/>
+        <ListSkills data={Javascript} titulo="Javascript"/>
+        <ListSkills data={Outros} titulo="Gerais"/>
+      
       </ScrollView>
-      </View>
     </View>
   )
 }
