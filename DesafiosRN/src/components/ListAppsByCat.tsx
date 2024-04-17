@@ -3,8 +3,12 @@ import React from 'react'
 import CardApp from './CardApp'
 import style from '../style/listApps'
 
-export default function ListAppsByCat({apps,navigation}) {
+export default function ListAppsByCat({apps,navigation,nome}) {
   return (
+    <>
+      <View style={style.containerCategoria}>
+        <Text style={style.categoria}>{nome}</Text>
+      </View>
     <View style={style.container}>
         <ScrollView
         horizontal={true}
@@ -15,5 +19,6 @@ export default function ListAppsByCat({apps,navigation}) {
 
         </ScrollView>
       </View>
+    </>
   )
 }

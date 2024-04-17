@@ -3,7 +3,7 @@ import React from 'react'
 import style from './style/apps'
 import Banner from './components/Banner'
 import ListApps from './components/ListAppsByCat'
-import { DIOapps,DestaqueApps } from './datas/apps'
+import { DIOapps,DestaqueApps,Rocketseat } from './datas/apps'
 
 export default function Home({navigation}) {
 
@@ -11,7 +11,7 @@ export default function Home({navigation}) {
   
 
   return (
-    <View style={style.view} >
+    <ScrollView contentContainerStyle={style.view} showsVerticalScrollIndicator={false}>
       <Text style={style.titulo}>Meus Apps</Text>
       <View style={style.container}>
 
@@ -27,12 +27,12 @@ export default function Home({navigation}) {
 
       </View>
 
-      <View style={style.containerCategoria}>
-        <Text style={style.categoria}>Digital Innovation One</Text>
-      </View>
-      <ListApps apps={DIOapps} navigation={navigation}/>
+      
+      <ListApps apps={Rocketseat} navigation={navigation} nome='Rocketseat'/>
+      
+      <ListApps apps={DIOapps} navigation={navigation} nome='Digital Innovation One' />
       
 
-    </View>
+    </ScrollView>
   )
 }

@@ -9,7 +9,7 @@ export default StyleSheet.create({
   view:{
     width:80,
     height:80,
-    borderRadius:100,
+    borderRadius:1000,
     marginTop:30,
     marginBottom:15,
     shadowOffset:{
@@ -22,8 +22,8 @@ export default StyleSheet.create({
     alignItems:"center"
   },
   img:{
-    width:'100%',
-    height:'80%',
+    width:'90%',
+    height:'75%',
   },
   containerTitle:{
     width:"100%",

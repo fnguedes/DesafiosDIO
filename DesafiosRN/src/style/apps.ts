@@ -26,14 +26,5 @@ export default StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
   },
-  containerCategoria:{
-    width:'90%',
-    borderBottomWidth:2,
-    borderColor:colors.divisao
-  },
-  categoria:{
-    fontSize:fontSize.medium,
-    fontWeight:'700',
-    color:colors.textoDestaque
-  }
+  
 })

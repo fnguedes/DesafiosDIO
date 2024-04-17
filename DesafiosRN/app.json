@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "DesafiosRN",
-    "slug": "DesafiosRN",
+    "slug": "Meu_Curriculo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "56082896-5b29-40a4-a3f6-d37846529ee0"
+      }
     }
   }
 }
