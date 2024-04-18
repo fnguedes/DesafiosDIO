@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "DesafiosRN",
+    "name": "Meu_Curriculo",
     "slug": "Meu_Curriculo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tyui_liru.Meu_Curriculo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
