@@ -11,6 +11,7 @@ export default function Home({navigation}) {
   
 
   return (
+    <View style={style.containerScreen}>
     <ScrollView contentContainerStyle={style.view} showsVerticalScrollIndicator={false}>
       <Text style={style.titulo}>Meus Apps</Text>
       <View style={style.container}>
@@ -34,5 +35,6 @@ export default function Home({navigation}) {
       
 
     </ScrollView>
+    </View>
   )
 }

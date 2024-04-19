@@ -4,10 +4,13 @@ import { colors, fontSize } from "../globalStyles";
 const {width}= Dimensions.get('screen')
 
 export default StyleSheet.create({
-  view:{
-    flex:1,
-    alignItems:'center',
+  containerScreen:{
+    flex:1, 
     backgroundColor:colors.background,
+  },
+  view:{
+    alignItems:'center',
+    paddingBottom:30
   },
   titulo:{
     height:'5%',
