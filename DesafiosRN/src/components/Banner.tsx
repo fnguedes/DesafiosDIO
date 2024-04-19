@@ -10,10 +10,10 @@ export default function Banner({app}) {
     if (supported) {
       Linking.openURL(app.link)
     }else{
-      ToastAndroid.show('Link indisponível',ToastAndroid.SHORT)
+      ToastAndroid.show('App não disponível ainda',ToastAndroid.LONG)
     }
   }else{
-    ToastAndroid.show('Link indisponível',ToastAndroid.SHORT)
+    ToastAndroid.show('App não disponível ainda',ToastAndroid.LONG)
   }
   }
 

@@ -20,7 +20,6 @@ export const DestaqueApps=[
     logo:CozinhaVirtual,
     imagem1:CV1,
     imagem2:CV2,
-    link:'https://landing-cozinha-virtual.vercel.app',
   },
 ]
 

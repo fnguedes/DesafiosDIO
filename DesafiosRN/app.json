@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Meu_Curriculo",
+    "name": "Meu Curriculo",
     "slug": "Meu_Curriculo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/iconR.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/Raposa.jpg",
@@ -19,13 +19,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/iconR.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.tyui_liru.Meu_Curriculo"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/iconR.png"
     },
     "extra": {
       "eas": {

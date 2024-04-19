@@ -105,8 +105,8 @@ export default function Profile() {
       </View>
 
       <View style={style.linha}/>
-        <Text style={style.tituloExp}>Experiência</Text>
       <ScrollView contentContainerStyle={style.containerExp} showsVerticalScrollIndicator={false}>
+        <Text style={style.tituloExp}>Experiência</Text>
         {experiences.map((exp,i)=><Experience key={i} exp={exp}/>)}
 
 

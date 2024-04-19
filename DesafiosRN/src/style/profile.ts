@@ -81,10 +81,9 @@ export default StyleSheet.create({
     color:colors.texto
   },
   containerListaSkills:{
-    paddingHorizontal:'5%',
-    justifyContent:'space-between',
+    justifyContent:'space-around',
     flexDirection:'row',
-    flexWrap:'wrap'
+    flexWrap:'wrap',
   },
 //Segunda parte da Tela
   linha:{
@@ -99,9 +98,7 @@ export default StyleSheet.create({
     alignItems:'center',
   },
   tituloExp:{
-    zIndex:99,
-    position:'absolute',
-    top:310,
+    marginVertical:0,
     fontWeight:'700',
     color:colors.titulo,
     fontSize:fontSize.medium,
