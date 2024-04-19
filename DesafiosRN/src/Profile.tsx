@@ -94,10 +94,12 @@ export default function Profile() {
             </View>
           </View>
 
-            <Text style={style.subTitle}>Habilidades Principais</Text>
-              <View style={style.containerListaSkills}>
-                {skills.map((skill,i)=><ButtonSkill key={i} skill={skill}/>)}
-              </View>
+          <Text style={style.subTitle}>Habilidades Principais</Text>
+          <View style={style.containerScrollSkills}>
+            <ScrollView contentContainerStyle={style.containerListaSkills}>
+              {skills.map((skill,i)=><ButtonSkill key={i} skill={skill}/>)}
+            </ScrollView>
+          </View>
             
               
         </View>

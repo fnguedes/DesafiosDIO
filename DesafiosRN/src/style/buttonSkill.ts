@@ -3,7 +3,7 @@ import { colors,fontSize,fontWeight } from "../globalStyles";
 
 export default StyleSheet.create({
   container:{
-    width:100,
+    width:'40%',
     height:30,
     alignItems:'center',
     justifyContent:'center',

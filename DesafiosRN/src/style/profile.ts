@@ -84,6 +84,10 @@ export default StyleSheet.create({
     justifyContent:'space-around',
     flexDirection:'row',
     flexWrap:'wrap',
+    overflow:'scroll',
+  },
+  containerScrollSkills:{
+    height:100
   },
 //Segunda parte da Tela
   linha:{
