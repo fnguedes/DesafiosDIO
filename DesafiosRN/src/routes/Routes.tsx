@@ -14,6 +14,8 @@ import Form from '../bat-signal/Form';
 
 import Lamborghini from '../lamborghini-garage/app/GarageScreen';
 
+import Camera from '../capturaDeVideo/Home'
+
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -28,6 +30,7 @@ export default function Routes() {
       <Stack.Screen name="Home Bat" component={HomeBat} />
       <Stack.Screen name="Home Bat Signal" component={HomeBatSignal} />
       <Stack.Screen name="Lamborghini" component={Lamborghini} />
+      <Stack.Screen name="Camera" component={Camera} />
       <Stack.Screen name="Form" component={Form} />
     </Stack.Navigator>
   )

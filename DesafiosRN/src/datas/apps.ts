@@ -1,10 +1,13 @@
 import batPass from '../../assets/Apps/bat-logo.png'
 import batSignal from '../../assets/Apps/bat-signal.png'
 import lamborghini from '../../assets/Apps/lamborghini.png'
+import camera from '../../assets/Apps/camera.jpg'
+
 export const DIOapps=[
   {id:1,titulo:'Bat Pass',imagem:batPass,color:'#000',secondColor:'#E5BF3C',txtColor:'#E5BF3C',nome:'Home Bat'},
   {id:2,titulo:'Bat Signal',imagem:batSignal,color:'#fff',secondColor:'#fff',txtColor:'#fff',nome:'Home Bat Signal'},
   {id:3,titulo:'Lamborghini',imagem:lamborghini,color:'#000',secondColor:'#986700',txtColor:'#986700',nome:'Lamborghini'},
+  {id:4,titulo:'Camera',imagem:camera,color:'#fff',secondColor:'#fff',txtColor:'#fff',nome:'Camera'},
 ]
 
 import CozinhaVirtual from '../../assets/Apps/LogoCozinhaVirtual.png'
